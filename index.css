@@ -9,7 +9,8 @@ a { color: inherit; }
     display: flex;
     flex: 1;
     justify-content: center;
-    margin: 7%;
+    margin: 3%;
+    margin-top: 12%;
 }
 
 #header{
@@ -21,4 +22,14 @@ a { color: inherit; }
     font-weight: bolder;
     text-decoration: underline;
     color:whitesmoke;
+}
+
+#sub-header{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    color:whitesmoke;
+    margin: 10px;
 }
