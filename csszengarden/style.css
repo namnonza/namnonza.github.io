@@ -1,0 +1,94 @@
+body {
+    background: #525252;
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);
+    background: linear-gradient(to right, #3d72b4, #525252);
+}
+
+a {
+    color: inherit;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template: 30% 45% 1fr/ 1fr;
+}
+
+#css-zen-garden {
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+.intro{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#zen-intro {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 100%;
+}
+
+#zen-intro header {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 5%;
+    text-align: start;
+}
+
+#zen-intro header h1 {
+    font-size: 108px;
+}
+
+#zen-intro header h2 {
+    font-size: 36px;
+    margin-top: -5%;
+}
+
+#zen-summary {
+    text-align: center;
+    margin-top: 2.5%;
+    font-style: italic;
+    font-size: 0.82rem;
+    animation: fadeIn 7s forwards;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#zen-summary p a{
+    font-size: 1rem ;
+    font-weight: bold;
+}
+
+.main {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+    margin-block-start: 5%; 
+    margin-inline-start: 5%;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin: 2%;
+}
+
+.sidebar { 
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.sidebar .wrapper {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    margin: 5%
+}
