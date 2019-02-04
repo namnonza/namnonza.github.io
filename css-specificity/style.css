@@ -1,0 +1,89 @@
+body {
+    color: whitesmoke;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-size: 1.35rem;
+}
+
+a {
+    color: wheat;
+    font-style: italic;
+    text-decoration-style: dotted;
+}
+
+.grid-adjust {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.wrapper {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#grid-wrapper {
+    display: grid;
+    grid-template: 10% 100%/ 1fr;
+}
+
+.header {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#page-header {
+    overflow-wrap: break-word;
+}
+
+#page-header h1{
+    font-size: 7rem;
+}
+
+#warning {
+    font-size: 0.85rem;
+    color: darkgrey
+}
+
+#description {
+    font-size: 1.5rem;
+}
+
+.main {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#main-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5%;
+}
+
+.imply {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.what-css h2 {
+    font-size: 3rem;
+}
+
+.example {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#example-section h2 {
+    font-size: 3rem;
+}
+
+#conclusion {
+    color: cornsilk;
+    font-weight: 900;
+}

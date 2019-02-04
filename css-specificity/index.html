@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body class="grid-adjust">
+    <div class="wrapper" id="grid-wrapper">
+        <div class="header" id="page-header">
+            <h1>CSS Specificity</h1>
+            <p id="warning">**summary of css specifity made by understanding myself.**</p>
+            <p id="description">
+                In CSS has many many way to implement into html file.
+                The problem should happen when CSS more than two CSS style were implement to one element, In that case
+                CSS has Specificity to decide what style that html choose to display.
+            </p>
+        </div>
+        <div class="main" id="main-grid">
+            <div class="imply">
+                <div class="what-css">
+                    <h2>What is CSS ?</h2>
+                    <p>
+                        "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a
+                        document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS
+                        describes how elements should be rendered on screen, on paper, in speech, or on other media."
+                    </p>
+                    <p>
+                        from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="top">developer.mozilla.org/docs/Web/CSS</a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="example" id="example-section">
+                <div class="specificity-selector">
+                    <h2>Specificity by selector</h2>
+                    <p>if you assign every selector to one element like this</p>
+                    <img src="./src/selector-spec/test-div.PNG" alt="test" />
+                    <p>The happen if you has change color by every selector</p>
+                    <img src="./src/selector-spec/overall-select.PNG" alt="css-test">
+                    <p>result is:</p> <img src="./src/selector-spec/result.PNG" alt="result">
+                    <p>that mean id was has more specificity than other.</p>
+                    <p>what if i delete id selector</p>
+                    <img src="./src/selector-spec/div-no-id.PNG" alt="div-no-id">
+                    <p>result:</p>
+                    <img src="./src/selector-spec/result-no-id.PNG" alt="res-no-id">
+                    <p>
+                        The most specificity of selector is ID and the low specificity is element.
+                        <h1 id="conclusion">" ID > CLASS > ELEMENT "</h1>
+                    </p>
+                </div>
+                <hr>
+                <div class="specificity-linkfile">
+                    <h2>What happen when you link two css with some same selector together ?</h2>
+                    <img src="./src/two-css-link/two-link-css.PNG" alt="two-link-css" height="60px">
+                    <p>we test with 2 file link 2 CSS file but they're switched</p>
+                    <div>
+                        <img src="./src/two-css-link/index-normal.PNG" alt="index-normal" width="100%">
+                        <img src="./src/two-css-link/home-normal.PNG" alt="home-normal" width="100%">
+                    </div>
+                    <p>then we inspect the linker INDEX and HOME</p>
+                    <img src="./src/two-css-link/inspect-index.PNG" alt="ins-index">
+                    <img src="./src/two-css-link/inspect-home.PNG" alt="ins-home">
+                    <p>
+                        you will see html choose the first CSS you link and if they have state(:state) html will get
+                        that style instead.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
