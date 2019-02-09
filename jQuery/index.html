@@ -7,19 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="field">
-        <p class="control">
-            <input id="search-input" class="input" type="text" placeholder="Type Search here!">
-            <button id="search-btn" class="button is-primary">SEARCH</button>
-        </p>
+    <div id="wrapper">
+        <div id="content">
+            <div class="field">
+                <p class="search-section" id="search">
+                    <input id="search-input" class="input" type="text" placeholder="Type Search here!">
+                    <button id="search-btn" class="button is-primary">SEARCH</button>
+                    <button id="adv-search" class="button is-primary">Adv S</button>
+                </p>
+            </div>
+            <div class="field" id="advance-search">
+                <div class="search-section" id="adv-search-sec">
+                    <div>
+                        <p id="categories-search-input">
+                            <h2>Catagory :</h2>
+                            <input class="adv-input input" type="text" placeholder="Type Search here!">
+                        </p>
+                        <p id="title-search-input">
+                            <h2>Title :</h2>
+                            <input class="adv-input input" type="text" placeholder="Type Search here!">
+                        </p>
+                        <p id="publishDate-search-input">
+                            <h2>Published date :</h2>
+                            <input class="adv-input input" type="text" placeholder="Type Search here!">
+                        </p>
+                        <p id="authors-search-input">
+                            <h2>Authors :</h2>
+                            <input class="adv-input input" type="text" placeholder="Type Search here!">
+                        </p>
+                    </div>
+                    <button id="search-btn" class="button is-primary">SEARCH</button>
+                </div>
+            </div>
+            <div id="result-search" class="table-result">
+            </div>
+            <script src="jquery-3.3.1.min.js"></script>
+            <script src="myscript.js"></script>
+        </div>
     </div>
-    <div id="result-search" class="table-result">
-    </div>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="myscript.js"></script>
 </body>
 
 </html>

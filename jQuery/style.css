@@ -1,0 +1,36 @@
+#search-input {
+    width: 50%;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.field {
+    margin-top: 5%;
+}
+
+#content {
+   grid-column: 2;
+}
+
+.search-section {
+    text-align: center;
+}
+
+#advance-search {
+    display: none;
+}
+
+#adv-search {
+    width: 50px;
+}
+
+#advance-search #search-btn {
+    margin-top: 3%; 
+}
+.adv-input {
+    width: 50%;
+}
