@@ -17,7 +17,7 @@ $(document).ready(function () {
                             (data.indexOf($('#search-input').val()) > -1) ? countAuth++ : null
                         });
                 }
-                return ((countCat > 0 || countAuth > 0 || $('#search-input').val() == '') || items.title.indexOf($('#search-input').val()) > -1) ? temp += '<li class="columns"><img class="column is-1" src=' + items.thumbnailUrl + '><span class="column is-2">' + items.title + '</span><span class="column is-5 shortDes">' + items.shortDescription + '</span><span class="column is-1 authors">' + items.authors + '</span><span class="column is-1 publishDate">' + items.publishedDate.$date.split('T')[0] + '</span><span class="column is-1 status">' + items.status + '</span></li>\n' : null
+                return ((countCat > 0 || countAuth > 0 || $('#search-input').val() == '') || items.title.indexOf($('#search-input').val()) > -1) ? temp += '<li class="columns is-centered"><img class="column is-1" src=' + items.thumbnailUrl + '><span class="column is-2">' + items.title + '</span><span class="column is-5 shortDes">' + items.shortDescription + '</span><span class="column is-1 authors">' + items.authors + '</span><span class="column is-1 publishDate">' + items.publishedDate.$date.split('T')[0] + '</span><span class="column is-1 status">' + items.status + '</span></li>\n' : null
             })
             $('#result-search').html(temp)
             $('#search-input').val('')
@@ -49,7 +49,7 @@ $(document).ready(function () {
                 // console.log(($('#date-adv-input').val() == items.publishedDate.$date.split('T')[0] || $('#date-adv-input').val() == ''))
                 // console.log((countAuth > -1 || $('#authors-adv-input').val() == ''))
 
-                return ((countCat > 0 || $('#catagories-adv-input').val() == '') && items.title.indexOf($('#title-adv-input').val()) > -1 && ($('#date-adv-input').val() == items.publishedDate.$date.split('T')[0] || $('#date-adv-input').val() == '') && (countAuth > 0 || $('#authors-adv-input').val() == '')) ? temp += '<li class="columns"><img class="column is-1" src=' + items.thumbnailUrl + '><span class="column is-2">' + items.title + '</span><span class="column is-5 shortDes">' + items.shortDescription + '</span><span class="column is-1 authors">' + items.authors + '</span><span class="column is-1 publishDate">' + items.publishedDate.$date.split('T')[0] + '</span><span class="column is-1 status">' + items.status + '</span></li>\n' : null
+                return ((countCat > 0 || $('#catagories-adv-input').val() == '') && items.title.indexOf($('#title-adv-input').val()) > -1 && ($('#date-adv-input').val() == items.publishedDate.$date.split('T')[0] || $('#date-adv-input').val() == '') && (countAuth > 0 || $('#authors-adv-input').val() == '')) ? temp += '<li class="columns is-centered"><img class="column is-1" src=' + items.thumbnailUrl + '><span class="column is-2">' + items.title + '</span><span class="column is-5 shortDes">' + items.shortDescription + '</span><span class="column is-1 authors">' + items.authors + '</span><span class="column is-1 publishDate">' + items.publishedDate.$date.split('T')[0] + '</span><span class="column is-1 status">' + items.status + '</span></li>\n' : null
             })
             $('#result-search').html(temp)
             $('#catagories-adv-input').val('')
