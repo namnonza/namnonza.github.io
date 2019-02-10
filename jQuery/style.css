@@ -4,7 +4,7 @@
 
 #wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 100%;
 }
 
@@ -22,6 +22,7 @@
 
 #advance-search {
     display: none;
+    margin-top: 3%; 
 }
 
 #adv-search {
@@ -33,4 +34,8 @@
 }
 .adv-input {
     width: 50%;
+}
+
+#adv-search-btn, #simp-search, #result-search {
+    margin-top:2%;
 }
