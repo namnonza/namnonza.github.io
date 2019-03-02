@@ -1,0 +1,28 @@
+.info-input {
+    width: 50%;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2.5rem;
+}
+
+#content {
+   grid-column: 2;
+}
+
+.labelE {
+    padding-top: 1%;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
